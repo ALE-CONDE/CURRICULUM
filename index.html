@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Currículum</title>
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    background: #ededed;
+    margin: 0;
+    padding: 0;
+}
+
+.cv {
+    max-width: 900px;
+    background: #ffffff;
+    margin: 30px auto;
+    padding: 30px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.15);
+    border-top: 6px solid #d4a017;
+    position: relative;
+}
+
+h1 {
+    margin: 0;
+    color: #222;
+}
+
+h2 {
+    color: #d4a017;
+    border-bottom: 1px solid #d4a017;
+    padding-bottom: 4px;
+}
+
+.datos {
+    color: #555;
+}
+
+.bloque {
+    margin-top: 18px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+.etq {
+    background: #222;
+    color: #fff;
+    padding: 4px 9px;
+    border-radius: 4px;
+    display: inline-block;
+    margin: 3px;
+    font-size: 13px;
+}
+
+.imgperfil {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    width: 110px;
+    height: 110px;
+    border-radius: 8px;
+    border: 3px solid #d4a017;
+    object-fit: cover;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 7px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: Arial, sans-serif;
+    margin-top: 4px;
+}
+
+button {
+    background: #d4a017;
+    color: white;
+    border: none;
+    padding: 9px 15px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 8px;
+}
+
+button:hover {
+    background: #b88913;
+}
+</style>
+</head>
+<body>
+
+<div class="cv">
+
+    <img src="fotocurri.jpeg" alt="Foto de perfil" class="imgperfil">
+
+    <h1>Aramis Alejandro Conde Najera</h1>
+    <p class="datos">
+        📧 alejandroaramis738@gmail.com <br>
+        📱 55-76-67-26-82 <br>
+        📍 Paseos del Lago 1, Edo-Mex.
+    </p>
+
+    <div class="bloque">
+        <h2>Perfil Profesional</h2>
+        <p>
+            Estudiante de Ingeniería en Sistemas con interés en desarrollo de software,
+            bases de datos y tecnología. Responsable, con facilidad para aprender
+            y trabajar en equipo.
+        </p>
+    </div>
+
+    <div class="bloque">
+        <h2>Formación Académica</h2>
+        <ul>
+            <li>Ingeniería en Sistemas – Universidad Bancaria de México (En curso)</li>
+            <li>Preparatoria – CBT Marcos Moshinsky Zumpango</li>
+        </ul>
+    </div>
+
+    <div class="bloque">
+        <h2>Habilidades</h2>
+        <span class="etq">HTML</span>
+        <span class="etq">CSS</span>
+        <span class="etq">Java</span>
+        <span class="etq">C#</span>
+        <span class="etq">MySQL</span>
+        <span class="etq">Git</span>
+    </div>
+    
+    <div class="bloque">
+        <h2>Intereses</h2>
+        <ul>
+            <li>Básquetbol 🏀</li>
+            <li>Programación 💻</li>
+        </ul>
+    </div>
+
+    <div class="bloque">
+        <h2>Proyectos</h2>
+        <ul>
+            <li>Simulador de gestión de memoria en HTML y JavaScript</li>
+            <li>CRUD con Java y MySQL en NetBeans</li>
+            <li>Implementación de estructuras de datos en C#</li>
+        </ul>
+    </div>
+
+    <div class="bloque">
+        <h2>Idiomas</h2>
+        <ul>
+            <li>Español – Nativo</li>
+            <li>Inglés – Básico</li>
+        </ul>
+    </div>
+    
+    <div class="bloque">
+        <h2>Contacto</h2>
+        <p>Envíame un mensaje directo:</p>
+
+        <form action="https://formsubmit.co/alejandroaramis738@gmail.com" method="POST">
+
+            <!-- Configuración FormSubmit -->
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="gracias.html">
+
+            <label>Tu nombre:</label>
+            <input type="text" name="nombre" required>
+
+            <label>Tu correo:</label>
+            <input type="email" name="correo" required>
+
+            <label>Mensaje:</label>
+            <textarea name="mensaje" rows="4" required></textarea>
+
+            <button type="submit">Enviar mensaje</button>
+        </form>
+    </div>
+
+</div>
+
+</body>
+</html>
